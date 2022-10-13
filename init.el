@@ -42,7 +42,9 @@ This function should only modify configuration layer settings."
                       enable-flyspell-auto-completion t)
      better-defaults
      emacs-lisp
-     ess
+     (ess :variables
+          ess-r-backend 'lsp
+          ess-assign-key "--")
      git
      helm
      lsp
